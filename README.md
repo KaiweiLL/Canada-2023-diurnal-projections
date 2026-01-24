@@ -20,33 +20,31 @@ This section includes the initial data preparation and processing of GOES satell
 - **01_Download.R**: Downloads GOES-16, GOES-17, and GOES-18 active fire products.
 - **02_Processing.R**: Processes raw GOES active fire detection data.
 - **03_Projecting.R**: Projects the processed data to consistent geographic coordinates.
-- **04_hourly_extract_fire weather_2017_2023.R**: Identifies hourly fire diurnal cycles and extracts corresponding hourly fire weather.
+- **04_Events_extraction_2017_2023.R**: Identifies hourly fire diurnal cycles and extracts active burning days (ABD) and overnight burning events (OBE) in North America, 2017-2023.
 - **05_NA_daily_extract_fire weather_2017_2023.R**: Extracts and calculates daily fire weather metrics.
-- **06_daily combo_hourly combo_goes combo.R**: Combine hourly and daily extractions.
+- **06_Events and fire weather match.R**: Match the ABD and OBE with daily fire weather.
 
-### 2. Active Burning Hours (ABH) Analysis (2017-2023)
+### 2. ML model training
 
-Analysis of observed hourly fire activity using R scripts:
+Trains a hierarchical Random Forest model to link fire weather to ABD and OBE
 
-- **01_daily_fire_pattern_statistics.R**: Analyzes daily fire patterns and statistics across North America.
-- **02_burning_duration_intensity_analysis.R**: Examines the relationship between burning duration and fire intensity.
-- **03_spatial_seasonal_burning_patterns.R**: Investigates spatial and seasonal burning patterns.
-- **04_spatial_visualization.R**: Creates spatial visualizations of burning hour patterns.
-- **05_biome_seasonal_analysis.R**: Analyzes burning patterns by biome and season.
-- **06_nighttime_burning_analysis.R**: Focuses on nighttime burning.
+- **01_ML_training.py**: link fire weather to ABD and OBE.
 
-### 3. Potential Burning Hours (PHB) Analysis (1975-2024)
+### 3. Future climate and fire weather projections 
 
-Long-term analysis of potential burning hours using Python scripts:
+This section details the downscaling and projection of fire weather under different climate scenarios, 4 CMIP6 models, 4 SSPs, 2 periods.
+four CMIP6 models (CanESM, UKESM, EC-Earth, GFDL), four SSPs (SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5), mid-century (2041-2070) and late-century (2071-2100); in total 32 sets of future daily meteorological variables, and thus 32 sets of future daily fire weather variables.
+Please contact us for the codes and datasets for future climate or fire weather projections.
 
-- **01_hourly_fire_model_training.py**: Trains the random forest model for predicting hourly fire probability.
-- **02_hourly_fire_potential_prediction.py**: Applies the model to historical weather data to predict potential burning hours.
-- **03_hourly_model_prediction_summary.py**: Summarizes hourly predictions into annual and seasonal metrics.
-- **04_annual_trend_analysis.py**: Analyzes long-term trends in annual potential burning hours.
-- **05_seasonal_trend_analysis.py**: Examines seasonal trends in potential burning hours.
-- **06_daily_active_pattern_analysis.py**: Analyzes patterns in potential active days and daily burning hours.
-- **07_extreme_hours_analysis.py**: Focuses on trends in extreme burning hour events (12+ and 24-hour events).
-- **08_biome_analysis.py**: Analyzes trends by biome to understand ecosystem-specific patterns.
+- **01_Future_ABDp_OBEp_projction.py**: Applies trained ML models to future fire weather projections to estimate ABDp and OBEp for mid-century (2041-2070) and late-century (2071-2100) under variaous climate model and SSPs combination.
+
+### 4. Analysis and Benchmarking
+
+This section details the downscaling and projection of fire weather under different climate scenarios, 4 CMIP6 models, 4 SSPs, 2 periods.
+four CMIP6 models (CanESM, UKESM, EC-Earth, GFDL), four SSPs (SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5), mid-century (2041-2070) and late-century (2071-2100); in total 32 sets of future daily meteorological variables, and thus 32 sets of future daily fire weather variables.
+Please contact us for the codes and datasets for future climate or fire weather projections.
+
+- **01_Future_ABDp_OBEp_Prediction.py**: Applies trained ML models to future fire weather projections to estimate ABDp and OBEp for mid-century (2041-2070) and late-century (2071-2100) under variaous climate model and SSPs combination.
 
 ## Key Findings
 
