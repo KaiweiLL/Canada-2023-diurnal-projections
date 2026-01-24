@@ -37,6 +37,7 @@ four CMIP6 models (CanESM, UKESM, EC-Earth, GFDL), four SSPs (SSP1-2.6, SSP2-4.5
 Please contact us for the codes and datasets for future climate or fire weather projections.
 
 - **01_Future_ABDp_OBEp_projction.py**: Applies trained ML models to future fire weather projections to estimate ABDp and OBEp for mid-century (2041-2070) and late-century (2071-2100) under variaous climate model and SSPs combination.
+- **02_Baseline_ABDp_OBEp_projction.py**: Applies trained ML models to baseline fire weather projections to estimate ABDp and OBEp for baseline peirod (1990-2020) under variaous climate model and SSPs combination.
 
 ### 4. Analysis and Benchmarking
 
