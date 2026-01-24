@@ -85,10 +85,10 @@ The analysis requires several datasets:
 
 ## Note
 
-The datasets required for the code are listed in the data requirements and are all publicly available.
+The datasets required for the code are listed in the data requirements and are all publicly available, except for future climate and fire weather projections (datasets coming soon)
 
 Please be aware that this code was not crafted by a professional software developer, hence it might not exhibit the highest level of elegance or efficiency. This code has been processed with the assistance of a large language model for clarity and organization when uploaded to GitHub. Should you have any feedback or recommendations concerning the code, we encourage you to share them with us. Additionally, if you have any inquiries about the code, the data, or the analysis overall, please don't hesitate to reach out.
 
 ## Citation
 
-If you use this code or data in your research, please cite: Luo, K., Wang, X., Castellanos-Acuna, D., & Flannigan, M. (2025). A Weakened diurnal weather cycle leads to longer burning hours in North America.
+If you use this code or data in your research, please cite: Luo, K., Wang, X., Castellanos-Acuna, D., & Flannigan, M. (2025). Was Canada's 2023 fire season a preview of things to come in North America?
