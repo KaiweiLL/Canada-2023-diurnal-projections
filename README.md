@@ -38,6 +38,7 @@ Please contact us for the codes and datasets for future climate or fire weather 
 
 - **01_Future_ABDp_OBEp_projction.py**: Applies trained ML models to future fire weather projections to estimate ABDp and OBEp for mid-century (2041-2070) and late-century (2071-2100) under variaous climate model and SSPs combination.
 - **02_Baseline_ABDp_OBEp_projction.py**: Applies trained ML models to baseline fire weather projections to estimate ABDp and OBEp for baseline peirod (1990-2020) under variaous climate model and SSPs combination.
+- **03_Individual_years_projction.py**: Applies trained ML models to individual years.
 
 ### 4. Analysis and Benchmarking
 
@@ -48,6 +49,10 @@ Scripts for spatial analysis, latitudinal amplification, and benchmarking recent
 - **03_Canada_2023_Normalization.py**: Benchmarks the 2023 Canadian fire season against future distributions to determine its frequency of occurrence
 - **04_Western_US_Comparison.py**: Evaluates the 2020/2021 Western U.S. extremes within mid- and late-century climate envelopes
 
+Above four scripts were integrated into two scripts below:
+
+- **01_Projection v2_analysis.py**
+- **02_Projection v2_plot.py**
 
 ## Key Findings
 
