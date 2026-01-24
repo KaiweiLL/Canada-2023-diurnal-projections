@@ -40,20 +40,20 @@ Please contact us for the codes and datasets for future climate or fire weather 
 
 ### 4. Analysis and Benchmarking
 
-This section details the downscaling and projection of fire weather under different climate scenarios, 4 CMIP6 models, 4 SSPs, 2 periods.
-four CMIP6 models (CanESM, UKESM, EC-Earth, GFDL), four SSPs (SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5), mid-century (2041-2070) and late-century (2071-2100); in total 32 sets of future daily meteorological variables, and thus 32 sets of future daily fire weather variables.
-Please contact us for the codes and datasets for future climate or fire weather projections.
+Scripts for spatial analysis, latitudinal amplification, and benchmarking recent extremes:
 
-- **01_Future_ABDp_OBEp_Prediction.py**: Applies trained ML models to future fire weather projections to estimate ABDp and OBEp for mid-century (2041-2070) and late-century (2071-2100) under variaous climate model and SSPs combination.
+- **01_Spatial_Analysis.py**: Continental analysis to reveal magnitude and spatial pattern of changes in ABDp and OBEp, e.g, multi-model agreement and identifies areas of "unanimous" fire potential increase.
+- **02_Latitudinal_Gradient_Analysis.py**: Analyzes the amplification of fire risk across boreal, temperate, and subtropical biomes.
+- **03_Canada_2023_Normalization.py**: Benchmarks the 2023 Canadian fire season against future distributions to determine its frequency of occurrence
+- **04_Western_US_Comparison.py**: Evaluates the 2020/2021 Western U.S. extremes within mid- and late-century climate envelopes
+
 
 ## Key Findings
 
-- Western mountains and boreal forests experienced the longest active burning hours, with ~one-third of active days exceeding 12 ABH.
-- About 60% of fires reached peak intensity within 24 hours of detection, while 14% of active days peaked at night.
-- Annual potential burning hours (PBH) rose 36% across North America's burnable areas over 1975–2024.
-- Western regions saw the most pronounced increases, with spring and fall seasons showing 48–57% increases.
-- Areas with significant changes gained 26 more potential active days annually and 1.2 additional potential burning hours daily.
-- Extreme PBH days (12+ hours/day) increased by 81-255% in fire-prone biomes.
+- **Overnight Burning Escalation**: OBEp increases outpace ABDp in both magnitude and spatial coherence, signaling a systematic weakening of the diurnal firebreak.
+- **Boreal Amplification**: High-latitude regions show the strongest response, with boreal overnight potential doubling to tripling by late-century under high-warming scenarios.
+- **The "New Normal"**: Conditions underlying Canada's record-breaking 2023 season become routine by mid-century, even under ambitious mitigation (SSP1-2.6); whereas Western U.S.2020/2021 extremes approach typical conditions only by late-century and under higher warming scenarios
+- **Spatial Synchronization**: Future fire risk shifts from localized hotspots to continent-wide, synchronized extremes, challenging current resource-sharing strategies.
 
 ## Data Requirements
 
@@ -61,7 +61,8 @@ The analysis requires several datasets:
 
 - GOES active fire images (nc) from Amazon Web Service S3 Explorer
 - Fire perimeters (shapefile) from NBAC, MTBS, and CWFP
-- ERA5-based daily and hourly fire weather (nc)
+- ERA5-based daily and hourly fire weather (nc), 1990-2023
+- Future climate and fire weather projections (nc), 32 sets from  4 CMIP6 models, 4 SSPs, 2 periods
 - Biome categorization (shapefile)
 
 ## Software Requirements
