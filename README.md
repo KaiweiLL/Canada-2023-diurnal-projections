@@ -97,4 +97,4 @@ Please be aware that this code was not crafted by a professional software develo
 
 ## Citation
 
-If you use this code or data in your research, please cite: Luo, K., Wang, X., Castellanos-Acuna, D., & Flannigan, M. (2025). Was Canada's 2023 fire season a preview of things to come in North America?
+If you use this code or data in your research, please cite: Luo, K., Wang, X., Castellanos-Acuna, D., & Flannigan, M. (2026). Was Canada's 2023 fire season a preview of things to come in North America?
