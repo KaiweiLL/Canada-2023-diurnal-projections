@@ -54,6 +54,9 @@ Above four scripts were integrated into two scripts below:
 - **01_Projection v2_analysis.py**
 - **02_Projection v2_plot.py**
 
+### 5. A small dataset to demo
+Here we provide late-century fire weather projections on SSP3-7.0 for demo use. It includes 6 component of FWI system outputs and can be used in workflow #4.
+
 ## Key Findings
 
 - **Overnight Burning Escalation**: OBEp increases outpace ABDp in both magnitude and spatial coherence, signaling a systematic weakening of the diurnal firebreak.
