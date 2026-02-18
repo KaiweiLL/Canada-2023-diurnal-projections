@@ -55,7 +55,7 @@ Above four scripts were integrated into two scripts below:
 - **02_Projection v2_plot.py**
 
 ### 5. A small dataset to demo
-Here we provide late-century fire weather projections on SSP3-7.0 for demo use. It includes 6 component of FWI system outputs and can be used in workflow #4.
+Here we provide late-century fire weather projections on SSP3-7.0 for demo use. It includes 6 component of FWI system outputs and can be used in workflow #4. Download link: https://drive.google.com/drive/folders/11ecJL1x0eR-xhqxNHK3umezZnZk6KnZF?usp=sharing
 
 ## Key Findings
 
